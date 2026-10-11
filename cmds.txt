@@ -1,3 +1,7 @@
-.\venv\Scripts\activate  
-
-uvicorn main:app --reload
+# after Ctrl+C, deactivate the venv first
+deactivate
+Remove-Item -Recurse -Force venv
+py -3.12 -m venv venv
+venv\Scripts\activate
+python --version          # should say 3.12.x
+pip install -r requirements.txt
