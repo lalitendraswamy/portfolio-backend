@@ -36,7 +36,7 @@ def get_embedding(text: str) -> list[float]:
         print(f"Error getting embedding: {e}")
         return []
 
-def retrieve_context(query: str, top_k: int = 3) -> str:
+def retrieve_context(query: str, top_k: int = 5) -> str:
     if not index:
         return "No external context available. Pinecone index is not initialized."
     

@@ -10,6 +10,16 @@
 - Built a React frontend with Tailwind CSS and Redux Toolkit to centralize conversation state, cache active history, and safely render HTML to help prevent XSS.
 - Integrated the chatbot into a 3D portfolio built with React Three Fiber and GSAP. Persona-based prompts for visitors such as HR and Interviewers adjust assistant behavior and suggested follow-up questions.
 
+## Construction Cost Estimator Agent
+
+**Period:** October 2026 to present
+**Tech stack:** Python, FastAPI, LangGraph, LangChain, Gemini API, MongoDB, and Server-Sent Events (SSE).
+
+- Built a multi-agent construction cost estimator with LangGraph and LangChain. A supervisor agent sends each request to the right agent: intake, estimation, RAG, or contact.
+- Used deterministic pricing logic so cost estimates are consistent and repeatable instead of being generated freely by the LLM.
+- Built a FastAPI backend with SSE streaming for real-time responses, multilingual chat support, and MongoDB for storing data.
+- Added a human-in-the-loop workflow where the owner reviews and approves estimates before they are finalized.
+
 ## Emoji Game
 
 **Period:** November 2023
